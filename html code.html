@@ -30,6 +30,7 @@
           $('.inputSection').hide()
           $('.resultSection').css('display', 'flex')
           $('input').each(function() {
+            if ($(this).val()!="")
             options.push($(this).val())
           })
           var winner = options[Math.floor(Math.random() * options.length)]
